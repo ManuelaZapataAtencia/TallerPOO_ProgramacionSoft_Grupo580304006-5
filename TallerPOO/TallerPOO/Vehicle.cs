@@ -2,12 +2,15 @@
 
 public abstract class Vehicle
 {
-	protected string Brand;
+    #region Propieries
+    protected string Brand;
 	protected string Model;
     private string reference;
-
+    #endregion
     protected string Reference { get => reference; set => reference = value; }
 
+
+    #region Methods
     public abstract decimal CalculateFinalPrice();
 	public override string ToString()
 	{
@@ -16,5 +19,5 @@ public abstract class Vehicle
 			$"\tReference: {Reference}\n";
     }
 
-
+    #endregion
 }
