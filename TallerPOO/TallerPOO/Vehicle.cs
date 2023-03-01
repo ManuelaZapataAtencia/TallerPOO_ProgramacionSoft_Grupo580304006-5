@@ -2,10 +2,15 @@
 
 public abstract class Vehicle
 {
-    #region Propieries
+    #region Properties
     protected string Brand;
 	protected string Model;
     private string reference;
+
+    protected Vehicle(string reference)
+    {
+        Reference = reference;
+    }
     #endregion
     protected string Reference { get => reference; set => reference = value; }
 

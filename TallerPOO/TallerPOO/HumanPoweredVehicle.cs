@@ -2,7 +2,7 @@
 
 public class HumanPoweredVehicle: Vehicle 
 {
-    #region Propieries
+    #region Properties
     protected decimal EnvironmentalSubsidy;
 
     #endregion
