@@ -7,19 +7,24 @@ namespace TallerPOO
     public class MotorizedLandVehicule : Vehicle
     {
         #region Properties
-        protected decimal CarTax { get; set; }
-        protected decimal CarType { get; set; }
-        protected string Plate { get; set; }
-        protected string TractionType { get; set; }
+        protected decimal _CarTax { get; set; }
+        protected string _CarType { get; set; }
+        protected string _Plate { get; set; }
+        protected string _TractionType { get; set; }
 
         #endregion
 
 
 
         #region Methods
-        public override decimal CalculateFinalPrice()
+        public override decimal CalculateFinalPrice(string CarType, decimal Price)
         {
-            throw new NotImplementedException();
+            return 0
+        }
+
+        public float CheckPercenage(string CarType)
+        {
+            return 0
         }
 
         public override string ToString()
@@ -34,6 +39,7 @@ namespace TallerPOO
             
         }
 
+        
         
         #endregion
     }
