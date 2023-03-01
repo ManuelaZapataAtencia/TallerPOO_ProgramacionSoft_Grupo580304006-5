@@ -23,13 +23,13 @@ namespace TallerPOO {
 
         public decimal GetValueToPay(decimal TotalPrice, decimal GovermentTax)
         {
-            return TotalPrice + GovermentTax;
+            return TotalPrice + TotalPrice*GovermentTax/100;
         }
 
         public override string ToString()
         {
             return $"Invoice {Id} Description: {Description}\n" +
-                   $"Government tax: {GovermentTax:C}\n" +
+                   $"Government tax: {TotalPrice*GovermentTax/100:C}\n" +
                    $"Unit price: {UnitPrice:C}\n" +
                    $"Quantity: {Quantity}\n" +
                    $"Total price: {TotalPrice:C}\n" +

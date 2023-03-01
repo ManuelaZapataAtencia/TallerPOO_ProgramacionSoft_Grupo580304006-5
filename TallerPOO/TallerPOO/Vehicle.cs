@@ -8,6 +8,7 @@ namespace TallerPOO
         public string _Brand { get; set; }
         public int _Model { get; set; }
         public string _Reference { get; set; }
+        public decimal _Price { get; set; }
 
         #endregion
 
@@ -20,7 +21,8 @@ namespace TallerPOO
         {
             return $"\tBrand: {_Brand}\n" +
                 $"\tModel: {_Model}\n" +
-                $"\tReference: {_Reference}\n";
+                $"\tReference: {_Reference}\n"+
+                $"\tPrice: ${_Price}";
         }
 
         #endregion
