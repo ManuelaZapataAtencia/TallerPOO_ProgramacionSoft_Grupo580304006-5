@@ -9,7 +9,7 @@ namespace TallerPOO
     public class UsedMotorizedLandVehicle : MotorizedLandVehicle
     {
         #region Properties
-        private int _Mileage { get; set; }
+        public int _Mileage { get; set; }
 
         #endregion
 

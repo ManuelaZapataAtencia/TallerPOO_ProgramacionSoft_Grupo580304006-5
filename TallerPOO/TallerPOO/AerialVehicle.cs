@@ -9,9 +9,9 @@ namespace TallerPOO
     {
         
         #region Properties
-        protected bool HasPermissionCA { get; set; }
-        protected int RegistrationCertificate { get; set; }
-        protected string TypeUse { get; set; }
+        public bool HasPermissionCA { get; set; }
+        public int RegistrationCertificate { get; set; }
+        public string TypeUse { get; set; }
         #endregion
 
         #region Methods

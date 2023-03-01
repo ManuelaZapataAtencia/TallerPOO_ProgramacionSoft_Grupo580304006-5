@@ -8,7 +8,7 @@ namespace TallerPOO
     public class MilitaryAerialVehicule: AerialVehicle
     {
         #region Properties
-        protected decimal _MilitaryTax { get; set; }
+        public decimal _MilitaryTax { get; set; }
         #endregion
 
         #region Methods

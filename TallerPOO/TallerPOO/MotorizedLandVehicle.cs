@@ -7,12 +7,13 @@ namespace TallerPOO
 {
     public class MotorizedLandVehicle : Vehicle
     {
-        private decimal _Percentaje { get; set; }
+
         #region Properties
-        protected decimal _CarTax { get; set; }
-        protected string _CarType { get; set; }
-        protected string _Plate { get; set; }
-        protected string _TractionType { get; set; }
+        public decimal _Percentaje { get; set; }
+        public decimal _CarTax { get; set; }
+        public string _CarType { get; set; }
+        public string _Plate { get; set; }
+        public string _TractionType { get; set; }
 
         #endregion
 
@@ -21,21 +22,19 @@ namespace TallerPOO
         #region Methods
         public override decimal CalculateFinalPrice( decimal Price, decimal Added)
         {
-            return Price + Added;
+            return Price + Added + _CarTax;
         }
 
-        public decimal CheckPercenage(decimal Price, float Percentaje, string CarType)
+        public decimal CheckPercentage(decimal Price, string CarType)
         {
-            int discountSUV = 20;
-            int discountP = 30;
             
             if (CarType == "SUV")
             {
-                return (decimal)(Percentaje = (discountSUV / 100));
+                return (decimal)(Price*0.2m);
             }
             else if (CarType == "Pickup")
             {
-                return (decimal)(Percentaje = (discountP / 100));
+                return (decimal)Price*0.3m;
             }
              else
             {
@@ -47,8 +46,8 @@ namespace TallerPOO
         public override string ToString()
         {
 
-            return "Motorized vehicle:" +
-                $"{base.ToString()}\n" +
+            return "\nMotorized vehicle:\n" +
+                $"{base.ToString()}" +
             $"\tCar Tax: {_CarTax}\n" +
                 $"\tCar Type: {_CarType}\n" +
             $"\tPlate: {_Plate}\n" +
