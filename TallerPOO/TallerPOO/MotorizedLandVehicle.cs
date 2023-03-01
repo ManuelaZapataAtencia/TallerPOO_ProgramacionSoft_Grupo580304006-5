@@ -7,12 +7,12 @@ namespace TallerPOO
 {
     public class MotorizedLandVehicle : Vehicle
     {
-        private decimal _Percentaje { get; set; }
+        public decimal _Percentaje { get; set; }
         #region Properties
-        protected decimal _CarTax { get; set; }
-        protected string _CarType { get; set; }
-        protected string _Plate { get; set; }
-        protected string _TractionType { get; set; }
+        public decimal _CarTax { get; set; }
+        public string _CarType { get; set; }
+        public string _Plate { get; set; }
+        public string _TractionType { get; set; }
 
         #endregion
 

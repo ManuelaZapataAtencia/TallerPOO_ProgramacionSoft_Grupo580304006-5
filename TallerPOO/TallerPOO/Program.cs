@@ -16,22 +16,22 @@ namespace TallerPOO
                 switch (option)
                 {
                     case 1:
-                        objPro.BuyMotorizedVehicle(vehicle);
+                        objPro.BuyMotorizedVehicle();
                         break;
                     case 2:
-                        objPro.BuyAerialVehicle(vehicle);
+                        objPro.BuyAerialVehicle();
                         break;
                     case 3:
-                        objPro.BuyCargoAerialVehicle(vehicle);
+                        objPro.BuyCargoAerialVehicle();
                         break;
                     case 4:
-                        objPro.BuyHumanPoweredVehicle(vehicle);
+                        objPro.BuyHumanPoweredVehicle();
                         break;
                     case 5:
-                        objPro.BuyMilitaryAerialVehicle(vehicle);
+                        objPro.BuyMilitaryAerialVehicle();
                         break;
                     case 6:
-                        objPro.BuyUsedMotorizedVehicle(vehicle);
+                        objPro.BuyUsedMotorizedVehicle();
                         break;
                     case 0:
                         Console.WriteLine("Goodbye!");
@@ -45,41 +45,76 @@ namespace TallerPOO
             } while(option!=0);
         }
 
-        public void BuyMotorizedVehicle(Vehicle vehicle)
+        public void BuyMotorizedVehicle()
         {
 
 
-            vehicle = new MotorizedLandVehicle()
-            {
+            Console.WriteLine("Enter the brand:");
+            string Brand = Console.ReadLine();
 
-            }
+            Console.WriteLine("Enter the model:");
+            int Model = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the reference:");
+            string Reference = Console.ReadLine();
+
+            Console.WriteLine("Enter the percentage of newness (0-100):");
+            decimal Percentaje = decimal.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the car tax (decimal value):");
+            decimal CarTax = decimal.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the car type:");
+            string CarType = Console.ReadLine();
+
+            Console.WriteLine("Enter the plate:");
+            string Plate = Console.ReadLine();
+
+            Console.WriteLine("Enter the traction type:");
+            string TractionType = Console.ReadLine();
+
+            Vehicle vehicle = new MotorizedLandVehicle()
+            {
+                _Brand = Brand,
+                _Model = Model,
+                _Reference = Reference,
+                _Percentaje = Percentaje,
+                _CarTax = CarTax,
+                _CarType = CarType,
+                _Plate = Plate,
+                _TractionType = TractionType
+            };
+
+            // Code to finalize the purchase of the motorized vehicle
+            // ...
+
         }
 
-        public void BuyAerialVehicle(Vehicle vehicle)
+        public void BuyAerialVehicle()
         {
             // Code to allow the user to purchase an aerial vehicle
             // ...
         }
 
-        public void BuyCargoAerialVehicle(Vehicle vehicle)
+        public void BuyCargoAerialVehicle()
         {
             // Code to allow the user to purchase a cargo aerial vehicle
             // ...
         }
 
-        public void BuyHumanPoweredVehicle(Vehicle vehicle)
+        public void BuyHumanPoweredVehicle()
         {
             // Code to allow the user to purchase a human-powered vehicle
             // ...
         }
 
-        public void BuyMilitaryAerialVehicle(Vehicle vehicle)
+        public void BuyMilitaryAerialVehicle()
         {
             // Code to allow the user to purchase a military aerial vehicle
             // ...
         }
 
-        public void BuyUsedMotorizedVehicle(Vehicle vehicle)
+        public void BuyUsedMotorizedVehicle()
         {
             // Code to allow the user to purchase a used motorized vehicle
             // ...

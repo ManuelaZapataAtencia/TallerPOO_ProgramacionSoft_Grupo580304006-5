@@ -5,9 +5,9 @@ namespace TallerPOO
     public abstract class Vehicle
     {
         #region Properties
-        protected string _Brand { get; set; }
-        protected int _Model { get; set; }
-        protected string _Reference { get; set; }
+        public string _Brand { get; set; }
+        public int _Model { get; set; }
+        public string _Reference { get; set; }
 
         #endregion
 

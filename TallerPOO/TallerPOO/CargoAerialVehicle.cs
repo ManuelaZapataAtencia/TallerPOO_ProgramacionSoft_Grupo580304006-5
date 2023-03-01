@@ -6,7 +6,7 @@ namespace TallerPOO
 {
     public class CargoAerialVehicle: AerialVehicle
     {
-        protected float _CapacityKilograms { get; set; }
+        public float _CapacityKilograms { get; set; }
 
         #region Properties
 

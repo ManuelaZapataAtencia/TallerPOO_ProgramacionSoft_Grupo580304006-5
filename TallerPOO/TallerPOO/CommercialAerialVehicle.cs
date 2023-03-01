@@ -7,7 +7,7 @@ namespace TallerPOO
     public class CommercialAerialVehicule: AerialVehicle
     {
         #region Properties
-        protected decimal _Discount { get; set; }
+        public decimal _Discount { get; set; }
         #endregion
 
         public decimal CalculateDiscount(int Model, decimal Price)
