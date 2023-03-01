@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Schema;
 
 namespace TallerPOO
 {
@@ -45,11 +46,11 @@ namespace TallerPOO
             } while(option!=0);
         }
 
-        public void BuyMotorizedVehicle(Vehicle vehicle)
+        public Vehicle BuyMotorizedVehicle()
         {
 
 
-            vehicle = new MotorizedLandVehicle()
+            return new MotorizedLandVehicle()
             {
 
             }
@@ -71,21 +72,90 @@ namespace TallerPOO
         {
             // Code to allow the user to purchase a human-powered vehicle
             // ...
+
+            return new HumanPoweredVehicle()
+            {
+
+                humanPoweredVehicle.Brand = "BMW",
+                humanPoweredVehicle.Model = 2019,
+                humanPoweredVehicle.Reference = "Blanco",
+                EnvironmentalSubsidy = environmentalSubsidy,
+
+            };
+
+
+        Console.WriteLine("******************************");
+            Console.WriteLine("* Purchase a human-powered vehicle *");
+            Console.WriteLine("******************************");
+
+            Console.WriteLine("Enter the brand of the vehicle");
+            string brand = Console.ReadLine();
+
+            Console.WriteLine("Enter the model of the vehicle");
+            int moldel = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter the reference of the vehicle");
+            string reference= Console.ReadLine();
+
+            Console.WriteLine("Enter price");
+            string price = Console.ReadLine();
+
+            Console.WriteLine("Enter Environmental Subsidy:");
+            decimal environmentalSubsidy = Convert.ToInt32(Console.ReadLine());
+
+           
         }
 
         public void BuyMilitaryAerialVehicle(Vehicle vehicle)
         {
             // Code to allow the user to purchase a military aerial vehicle
             // ...
+            Console.WriteLine("******************************");
+            Console.WriteLine("* Purchase a military aerial vehicle *");
+            Console.WriteLine("******************************");
+
+            Console.WriteLine("Enter the brand of the vehicle");
+            string brand = Console.ReadLine();
+
+            Console.WriteLine("Enter the model of the vehicle");
+            int moldel = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter the reference of the vehicle");
+            string reference = Console.ReadLine();
+
+
+            Console.WriteLine("Enter Military Tax:");
+            decimal militaryTax = Convert.ToInt32(Console.ReadLine());
+
         }
 
         public void BuyUsedMotorizedVehicle(Vehicle vehicle)
         {
             // Code to allow the user to purchase a used motorized vehicle
             // ...
+
+            Console.WriteLine("******************************");
+            Console.WriteLine("* Purchase a used motorized vehicle *");
+            Console.WriteLine("******************************");
+
+            Console.WriteLine("Enter the brand of the vehicle");
+            string brand = Console.ReadLine();
+
+            Console.WriteLine("Enter the model of the vehicle");
+            int moldel = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("Enter the reference of the vehicle");
+            string reference = Console.ReadLine();
+
+
+            Console.WriteLine("Enter Mileage:");
+            decimal mileage = Convert.ToInt32(Console.ReadLine());
+
         }
-
-
+     
 
         public string MainMenu()
         {

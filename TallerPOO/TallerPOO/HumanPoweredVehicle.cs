@@ -5,7 +5,7 @@ namespace TallerPOO
     public class HumanPoweredVehicle : Vehicle
     {
         #region Properties
-        protected decimal _EnvironmentalSubsidy { get; set; }
+        public decimal _EnvironmentalSubsidy { get; set; }
 
         #endregion
 
