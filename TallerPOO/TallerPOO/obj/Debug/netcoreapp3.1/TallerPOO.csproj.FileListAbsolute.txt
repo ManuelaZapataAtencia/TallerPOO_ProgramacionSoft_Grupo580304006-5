@@ -12,10 +12,3 @@ D:\dzapa\Documents\Programacion de software\TallerPOO_ProgramacionSoft_Grupo5803
 D:\dzapa\Documents\Programacion de software\TallerPOO_ProgramacionSoft_Grupo580304006-5\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.dll
 D:\dzapa\Documents\Programacion de software\TallerPOO_ProgramacionSoft_Grupo580304006-5\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.pdb
 D:\dzapa\Documents\Programacion de software\TallerPOO_ProgramacionSoft_Grupo580304006-5\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.genruntimeconfig.cache
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.csproj.AssemblyReference.cache
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.GeneratedMSBuildEditorConfig.editorconfig
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.AssemblyInfoInputs.cache
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.AssemblyInfo.cs
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.csproj.CoreCompileInputs.cache
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.dll
-C:\REPOSITORIOS VSC\TallerPOO_ProgramacionSoft_Grupo580304006-5n\TallerPOO\TallerPOO\obj\Debug\netcoreapp3.1\TallerPOO.pdb
