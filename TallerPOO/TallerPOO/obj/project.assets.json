@@ -8,35 +8,31 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\salak401\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\mi pc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\salak401\\Desktop\\TallerPOO\\TallerPOO\\TallerPOO.csproj",
+      "projectUniqueName": "C:\\REPOSITORIOS VSC\\TallerPOO_ProgramacionSoft_Grupo580304006-5\\TallerPOO\\TallerPOO\\TallerPOO.csproj",
       "projectName": "TallerPOO",
-      "projectPath": "C:\\Users\\salak401\\Desktop\\TallerPOO\\TallerPOO\\TallerPOO.csproj",
-      "packagesPath": "C:\\Users\\salak401\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\salak401\\Desktop\\TallerPOO\\TallerPOO\\obj\\",
+      "projectPath": "C:\\REPOSITORIOS VSC\\TallerPOO_ProgramacionSoft_Grupo580304006-5\\TallerPOO\\TallerPOO\\TallerPOO.csproj",
+      "packagesPath": "C:\\Users\\mi pc\\.nuget\\packages\\",
+      "outputPath": "C:\\REPOSITORIOS VSC\\TallerPOO_ProgramacionSoft_Grupo580304006-5\\TallerPOO\\TallerPOO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\salak401\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mi pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
