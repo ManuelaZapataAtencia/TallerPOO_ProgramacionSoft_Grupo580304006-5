@@ -1,26 +1,25 @@
 ﻿using System;
 
-public class HumanPoweredVehicle: Vehicle 
+namespace TallerPOO
 {
-    #region Properties
-    protected decimal EnvironmentalSubsidy;
-
-    #endregion
-
-    public HumanPoweredVehicle()
-	{
-	}
-
-    #region Methods
-    public override decimal CalculateFinalPrice()
+    public class HumanPoweredVehicle : Vehicle
     {
-        throw new NotImplementedException();
-    }
+        #region Properties
+        protected decimal EnvironmentalSubsidy { get; set; }
 
-    public override string ToString()
-    {
-        return $"\tEnvironmentalSubsidy: {EnvironmentalSubsidy}\n";
+        #endregion
 
+        #region Methods
+        public override decimal CalculateFinalPrice()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override string ToString()
+        {
+            return $"\tEnvironmentalSubsidy: {EnvironmentalSubsidy}\n";
+
+        }
+        #endregion
     }
-    #endregion
 }

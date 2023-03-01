@@ -1,28 +1,28 @@
 using System;
 
-public abstract class Vehicle
+namespace TallerPOO
 {
-    #region Properties
-    protected string Brand;
-	protected string Model;
-    private string reference;
-
-    protected Vehicle(string reference)
+    public abstract class Vehicle
     {
-        Reference = reference;
+        #region Properties
+        protected string _Brand { get; set; }
+        protected string _Model { get; set; }
+        protected string _Reference { get; set; }
+
+        #endregion
+
+
+
+        #region Methods
+        public abstract decimal CalculateFinalPrice();
+
+        public override string ToString()
+        {
+            return $"\tBrand: {_Brand}\n" +
+                $"\tModel: {_Model}\n" +
+                $"\tReference: {_Reference}\n";
+        }
+
+        #endregion
     }
-    #endregion
-    protected string Reference { get => reference; set => reference = value; }
-
-
-    #region Methods
-    public abstract decimal CalculateFinalPrice();
-	public override string ToString()
-	{
-		return $"\tBrand: {Brand}\n" +
-			$"\tModel: {Model}\n" +
-			$"\tReference: {Reference}\n";
-    }
-
-    #endregion
 }

@@ -7,9 +7,7 @@ namespace TallerPOO
     internal class CargoAerialVehicule: AerialVehicule
     {
         protected decimal CapacityKilograms { get; set; }
-        public CargoAerialVehicule(string reference) : base(reference)
-        {
-        }
+        
         #region Properties
         
         #endregion

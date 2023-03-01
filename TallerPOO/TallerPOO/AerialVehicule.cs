@@ -7,9 +7,7 @@ namespace TallerPOO
 {
     public class AerialVehicule: Vehicle
     {
-        public AerialVehicule(string reference) : base(reference)
-        {
-        }
+        
         #region Properties
         protected bool HasPermissionCA { get; set; }
         protected int RegistrationCertificate { get; set; }

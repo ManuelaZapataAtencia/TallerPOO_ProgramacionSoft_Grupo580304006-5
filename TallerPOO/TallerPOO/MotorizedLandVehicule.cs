@@ -7,14 +7,10 @@ namespace TallerPOO
     public class MotorizedLandVehicule : Vehicle
     {
         #region Properties
-        protected decimal CarTax;
-        protected decimal CarType;
-        protected string Plate;
-        protected string TractionType;
-
-        public MotorizedLandVehicule(string reference) : base(reference)
-        {
-        }
+        protected decimal CarTax { get; set; }
+        protected decimal CarType { get; set; }
+        protected string Plate { get; set; }
+        protected string TractionType { get; set; }
 
         #endregion
 
@@ -29,10 +25,12 @@ namespace TallerPOO
         public override string ToString()
         {
 
-            return $"\tCarTax: {CarTax}\n" +
+            return"Motorized vehicle:"+
+                base.ToString() 
+                $"\tCarTax: {CarTax}\n" +
                 $"\tCarTypel: {CarType}\n" +
-            $"\tPlate: {Plate}\n" +
-             $"\tTractionType: {TractionType}\n";
+                $"\tPlate: {Plate}\n" +
+                $"\tTractionType: {TractionType}\n";
             
         }
 
