@@ -107,32 +107,27 @@ namespace TallerPOO
 
         public void BuyAerialVehicle()
         {
-            // Code to allow the user to purchase an aerial vehicle
-            // ...
+            Console.WriteLine("Not implemented yet");
         }
 
         public void BuyCargoAerialVehicle()
         {
-            // Code to allow the user to purchase a cargo aerial vehicle
-            // ...
+            Console.WriteLine("Not implemented yet");
         }
 
         public void BuyHumanPoweredVehicle()
         {
-            // Code to allow the user to purchase a human-powered vehicle
-            // ...
+            Console.WriteLine("Not implemented yet");
         }
 
         public void BuyMilitaryAerialVehicle()
         {
-            // Code to allow the user to purchase a military aerial vehicle
-            // ...
+            Console.WriteLine("Not implemented yet");
         }
 
         public void BuyUsedMotorizedVehicle()
         {
-            // Code to allow the user to purchase a used motorized vehicle
-            // ...
+            Console.WriteLine("Not implemented yet");
         }
 
         public string GenerateInvoice(Vehicle vehicle)
@@ -159,11 +154,8 @@ namespace TallerPOO
                 GovermentTax = governmentTax,
                 UnitPrice = unitPrice,
                 Quantity = quantity,
-                TotalPrice = 0m
+                TotalPrice = vehicle._Price
         };
-
-            objInvoice.TotalPrice = objInvoice.GetTotalAmount(unitPrice, quantity);
-            objInvoice.TotalPrice = objInvoice.GetValueToPay(objInvoice.TotalPrice, governmentTax);
 
             return objInvoice.ToString();
         }
