@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,6 +7,7 @@ namespace TallerPOO
 {
     public class MotorizedLandVehicule : Vehicle
     {
+        private decimal _Percentaje;
         #region Properties
         protected decimal _CarTax { get; set; }
         protected string _CarType { get; set; }
@@ -17,30 +19,44 @@ namespace TallerPOO
 
 
         #region Methods
-        public override decimal CalculateFinalPrice(string CarType, decimal Price)
+        public override decimal CalculateFinalPrice( decimal Price, float Percentaje)
         {
-            return 0
+            return Price - Convert.ToDecimal(Percentaje);
         }
 
-        public float CheckPercenage(string CarType)
+        public decimal CheckPercenage(decimal Price, float Percentaje, string CarType)
         {
-            return 0
+            int discountSUV = 20;
+            int discountP = 30;
+            
+            if (CarType == "SUV")
+            {
+                return (decimal)(Percentaje = (discountSUV / 100));
+            }
+            else if (CarType == "Pickup")
+            {
+                return (decimal)(Percentaje = (discountP / 100));
+            }
+             else
+            {
+                Console.WriteLine("Discount does NOT apply");
+            }
         }
-
         public override string ToString()
         {
 
-            return"Motorized vehicle:"+
-                base.ToString() 
-                $"\tCarTax: {CarTax}\n" +
-                $"\tCarTypel: {CarType}\n" +
-                $"\tPlate: {Plate}\n" +
-                $"\tTractionType: {TractionType}\n";
-            
+            return "Motorized vehicle:" +
+                $"{base.ToString()}\n" +
+            $"\tCar Tax: {_CarTax}\n" +
+                $"\tCar Type: {_CarType}\n" +
+            $"\tPlate: {_Plate}\n" +
+             $"\tTraction Type: {_TractionType}\n";
         }
 
-        
-        
+
         #endregion
     }
 }
+
+
+

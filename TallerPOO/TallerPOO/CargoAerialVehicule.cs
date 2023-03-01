@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TallerPOO
 {
-    internal class CargoAerialVehicule: AerialVehicule
+    public class CargoAerialVehicule: AerialVehicule
     {
         protected decimal CapacityKilograms { get; set; }
         
