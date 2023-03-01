@@ -18,12 +18,14 @@ namespace TallerPOO {
 
         public decimal GetTotalAmount(decimal UnitPrice, int Quantity)
         {
-            return UnitPrice * Convert.ToDecimal(Quantity);
+            TotalPrice = UnitPrice * Convert.ToDecimal(Quantity);
+            return TotalPrice;
         }
 
         public decimal GetValueToPay(decimal TotalPrice, decimal GovermentTax)
         {
-            return TotalPrice + TotalPrice*GovermentTax/100;
+            TotalPrice = TotalPrice + TotalPrice * GovermentTax / 100;
+            return TotalPrice;
         }
 
         public override string ToString()
@@ -32,7 +34,7 @@ namespace TallerPOO {
                    $"Government tax: {TotalPrice*GovermentTax/100:C}\n" +
                    $"Unit price: {UnitPrice:C}\n" +
                    $"Quantity: {Quantity}\n" +
-                   $"Total price: {TotalPrice:C}\n" +
+                   $"Total price: {GetTotalAmount(TotalPrice,Quantity):C}\n" +
                    $"Value to pay: {GetValueToPay(TotalPrice, GovermentTax):C}";
         }
     }

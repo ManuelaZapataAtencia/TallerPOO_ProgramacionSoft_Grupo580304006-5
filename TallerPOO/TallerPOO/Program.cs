@@ -112,7 +112,7 @@ namespace TallerPOO
         public void BuyAerialVehicle()
         {
             Console.WriteLine("******************************");
-            Console.WriteLine("* Purchase a human-powered vehicle *");
+            Console.WriteLine("* Purchase a Aerial Vehicle *");
             Console.WriteLine("******************************");
 
             Console.WriteLine("Enter the brand of the vehicle");
@@ -138,6 +138,8 @@ namespace TallerPOO
             String TypeUse = Console.ReadLine();
 
 
+
+
             AerialVehicle aerialVehicle = new AerialVehicle
             {
                 _Brand = brand,
@@ -147,10 +149,10 @@ namespace TallerPOO
                 HasPermissionCA = HasPermissionCA,
                 RegistrationCertificate = RegistrationCertificate,
                 TypeUse = TypeUse
-                
+
             };
 
-            aerialVehicle._Price = aerialVehicle.CalculateFinalPrice(price);
+            aerialVehicle._Price = aerialVehicle.CalculateFinalPrice(price, 0);
             Console.WriteLine(GenerateInvoice(aerialVehicle));
 
         }
@@ -159,7 +161,7 @@ namespace TallerPOO
         public void BuyCargoAerialVehicle()
         {
             Console.WriteLine("******************************");
-            Console.WriteLine("* Purchase a human-powered vehicle *");
+            Console.WriteLine("* Purchase a Cargo Aerial Vehicle *");
             Console.WriteLine("******************************");
 
             Console.WriteLine("Enter the brand of the vehicle");
@@ -190,14 +192,12 @@ namespace TallerPOO
 
             };
 
-            cargoAerialVehicle._Price = cargoAerialVehicle.CalculateFinalPrice((price, cargoAerialVehicle.CalculatedAdded(price));
+            cargoAerialVehicle._Price = cargoAerialVehicle.CalculateFinalPrice(price, cargoAerialVehicle.CalculatedAdded(price));
             Console.WriteLine(GenerateInvoice(cargoAerialVehicle));
         }
 
         public void BuyHumanPoweredVehicle()
         {
-
-
             Console.WriteLine("******************************");
             Console.WriteLine("* Purchase a human-powered vehicle *");
             Console.WriteLine("******************************");
@@ -236,6 +236,7 @@ namespace TallerPOO
 
         public void BuyMilitaryAerialVehicle()
         {
+           
 
             Console.WriteLine("******************************");
             Console.WriteLine("* Purchase a military aerial vehicle *");
@@ -272,6 +273,7 @@ namespace TallerPOO
 
         public void BuyUsedMotorizedVehicle()
         {
+      
 
 
             Console.WriteLine("******************************");
@@ -332,12 +334,9 @@ namespace TallerPOO
                 GovermentTax = governmentTax,
                 UnitPrice = unitPrice,
                 Quantity = quantity,
-                TotalPrice = 0m
-            };
-
-            objInvoice.TotalPrice = objInvoice.GetTotalAmount(unitPrice, quantity);
-            objInvoice.TotalPrice = objInvoice.GetValueToPay(objInvoice.TotalPrice, governmentTax);
-
+                TotalPrice = vehicle._Price
+        };
+               
             return objInvoice.ToString();
         }
 
