@@ -11,7 +11,30 @@ namespace TallerPOO {
         private int _Quantity;
         private decimal _TotalPrice;
 
-        public Vehicle
+        public Vehicle AddVehicle(Vehicle vehicle)
+        {
+            return vehicle;
+        }
+
+        public decimal GetTotalAmount(decimal UnitPrice, int Quantity)
+        {
+            return UnitPrice * decimal.parse(Quantity);
+        }
+
+        public decimal GetValueToPay(decimal TotalPrice, decimal GovermentTax)
+        {
+            return TotalPrice + GovermentTax;
+        }
+
+        public override string ToString()
+        {
+            return $"Invoice {Id} Description: {Description}\n" +
+                   $"Government tax: {GovermentTax:C}\n" +
+                   $"Unit price: {UnitPrice:C}\n" +
+                   $"Quantity: {Quantity}\n" +
+                   $"Total price: {TotalPrice:C}\n" +
+                   $"Value to pay: {GetValueToPay(TotalPrice, GovermentTax):C}";
+        }
 
 
         public string Id { get => _Id; set => _Id = value; }
