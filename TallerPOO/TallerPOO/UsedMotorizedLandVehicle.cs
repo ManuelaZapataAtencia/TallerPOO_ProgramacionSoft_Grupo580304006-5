@@ -1,5 +1,8 @@
-﻿using System;
-using System.Diagnostics;
+﻿using Microsoft.VisualBasic;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
 
 namespace TallerPOO
 {
@@ -12,30 +15,31 @@ namespace TallerPOO
 
         #region Methods
 
-        public decimal UsedVehicle(int Mileage, float Percentaje, decimal Price)
+        public decimal ChecKDiscountUsedVehicle(int Mileage, decimal Price)
         {
             if (Mileage >= 1 && Mileage <= 4999)
             {
-                return Price * Convert.ToDecimal(Percentaje);
+                return Price * 0.125m;
 
             }
             else if(Mileage >= 5000 && Mileage <= 9999)
             {
-                return Price * Convert.ToDecimal(Percentaje);
+                return Price * 0.25m;
             }
             else if (Mileage >= 10000)
             {
-                return Price * Convert.ToDecimal(Percentaje);
+                return Price * 0.5m;
             }    
             else
             {
                 Console.WriteLine("Mileage range does NOT apply to discount\r\n");
+                return 0m;
             }
 
         }
-        public override decimal CalculateFinalPrice(float Percentaje, decimal Price)
+        public override decimal CalculateFinalPrice(decimal Price,decimal Added)
         {
-            return Price - Convert.ToDecimal(Percentaje);
+            return Price - Added;
         }
 
         public override string ToString()

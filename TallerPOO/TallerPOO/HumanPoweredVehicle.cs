@@ -10,14 +10,14 @@ namespace TallerPOO
         #endregion
 
         #region Methods
-        public decimal CalculateFinalPrice(decimal EnvironmentalSubsidy,decimal Price)
+        public override decimal CalculateFinalPrice(decimal Price, decimal Added)
         {
-            return Price - EnvironmentalSubsidy;
+            return Price - Added;
         }
 
-        public decimal CalculateDiscount(float Percentaje,decimal Price)
+        public decimal CalculateSubsidy(decimal Price)
         {
-            return Price * Convert.ToDecimal(Percentaje) ;
+            return Price * 0.25m;
         }
 
         public override string ToString()

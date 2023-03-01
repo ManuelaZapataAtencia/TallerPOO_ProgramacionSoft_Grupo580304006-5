@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TallerPOO
 {
-    public class AerialVehicule: Vehicle
+    public class AerialVehicle: Vehicle
     {
         
         #region Properties
@@ -15,15 +15,20 @@ namespace TallerPOO
         #endregion
 
         #region Methods
-        public override decimal CalculateFinalPrice()
+        public override decimal CalculateFinalPrice(decimal Price, decimal Added)
         {
-            throw new NotImplementedException();
+            return Price;
         }
+
+        
+
         public override string ToString()
         {
-            return $"\tHasPermissionCA: {HasPermissionCA}\n" +
-               $"\tRegistrationCertificate: {RegistrationCertificate}\n" +
-           $"\tTypeUse: {TypeUse}\n";
+            return "Aerial Vehicle:"+
+                base.ToString()+
+                $"\tHasPermissionCA: {HasPermissionCA}\n" +
+                $"\tRegistrationCertificate: {RegistrationCertificate}\n" +
+                $"\tTypeUse: {TypeUse}\n";
         }
 
         #endregion

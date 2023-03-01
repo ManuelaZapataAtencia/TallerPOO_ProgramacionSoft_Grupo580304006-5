@@ -6,7 +6,7 @@ namespace TallerPOO
     {
         #region Properties
         protected string _Brand { get; set; }
-        protected string _Model { get; set; }
+        protected int _Model { get; set; }
         protected string _Reference { get; set; }
 
         #endregion
@@ -14,7 +14,7 @@ namespace TallerPOO
 
 
         #region Methods
-        public abstract decimal CalculateFinalPrice();
+        public abstract decimal CalculateFinalPrice(decimal Price, decimal Added);
 
         public override string ToString()
         {
