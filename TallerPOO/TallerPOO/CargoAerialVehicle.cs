@@ -19,7 +19,7 @@ namespace TallerPOO
             return Price + Added;
         }
 
-        public decimal CalculatedAdded(float Price)
+        public decimal CalculatedAdded(decimal Price)
         {
             return (decimal)_CapacityKilograms*5000.0m;
         }
